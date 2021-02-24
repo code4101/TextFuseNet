@@ -11,3 +11,7 @@ dist/
 *.pyd
 *.so
 *.pkl
+
+.DS_Store
+
+test_icdar2013/

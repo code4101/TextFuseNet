@@ -14,6 +14,9 @@ from detectron2.utils.logger import setup_logger
 
 from predictor import VisualizationDemo
 
+from xlproject.kzconfig import *
+
+
 # constants
 WINDOW_NAME = "COCO detections"
 
@@ -51,7 +54,7 @@ def get_parser():
 
     parser.add_argument(
         "--input",
-        default="./input_images/*.jpg",
+        default= str(CommonDir.ic13loc / 'test') + "/*.jpg",
         nargs="+",
         help="the folder of icdar2013 test images"
     )
